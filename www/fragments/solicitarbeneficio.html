@@ -1,0 +1,59 @@
+<button type='button' class='close xcloseBeneficio btnActionModal cerrarVentanaCupon' data-modal='modal_canje' data-action='drop' style='font-size:28px;position:absolute;right:15px;top:15px;opacity:0.75;'>x</button>
+<div class="shadow" style="margin-top:25px;padding:15px;">
+    <table width="100%" class="wait-message">
+        <tr>
+            <td valign="middle" align="center">
+                <h2 style="color:#005caf;padding:10px;margin:10px;">Se efectuará la verificación del cupón.  Por favor aguarde unos instantes, mientras recibimos el código de transacción.</h2>
+            </td>
+        </tr>
+        <tr class="wait-canje">
+            <td valign="middle" align="center">
+                <img src="img/waiter.gif" style="width:25%;margin-top:45px;margin-bottom:20px;" /><br />
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table width="100%" class="hidden not-cupon">
+        <tr>
+            <td valign="middle" align="center" style="color:#005caf;">
+                <h1 style="color:red;">Canje no efectuado</h1>
+                <p>Alguno de estos inconvenientes, pueden haberse presentado:</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle">
+                <ul>
+                    <li>Fallas en la conexión</li>
+                    <li>El servidor de verificaciones no está disponible</li>
+                    <li>Un error inesperado, ha ocurrido</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="server-message" valign="middle" align="center" style="color:darkred;"></td>
+        </tr>
+    </table>
+    <table width="100%" class="ok-footer hidden">
+        <tr>
+            <td valign="middle" align="center" style="color:#005caf;" class="verification-message">
+                <img class="qr_code" style="width:200px;height:200px" src="" />
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center" style="color:#005caf;" class="verification-message">
+                <div class="verification-msg"></div>
+                <div class="verification-code"></div>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" class="hidden ok-cupon" style="margin-top:15px;">
+        <tr>
+            <td valign="middle" align="center">
+                <p style="color:#005caf;padding:0px;margin:0px;font-size:14px;">
+                    En cualquier momento, podés acceder al cupón para ser presentado desde el menú de <a href="#" class="btnMisCupones btn-asociate btn btn-lg btn-raised btn-primary">Mis Cupones</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>

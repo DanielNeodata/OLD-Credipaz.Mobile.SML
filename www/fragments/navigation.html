@@ -1,0 +1,58 @@
+<table style="width:100%;padding-top:20px;" class="noshare">
+    <tr>
+        <td width="50%" align="left" class="hidden b-menu" style="padding-left:10px;">
+            <a href="#" class="pull-left btnMenu">
+                <i class="material-icons" style="color:#4959fd;font-size:40px;">menu</i>
+            </a>
+        </td>
+        <td width="50%" align="right" class="b-menu" style="padding-right:10px;">
+            <button class="btn-aux hidden btn-asociate btnAdherirJelper nosocio">Asociate</button>
+            <button class="btn btn-raised btn-danger hidden" onclick="_FUNCTIONS.onShowLogin();">Login</button>
+        </td>
+    </tr>
+</table>
+<table style="width:100%;" class="noshare">
+    <tr>
+        <td class="apellido-nombre" valign="bottom" align="center" style="color:#445bc1;font-size:16px;"></td>
+    </tr>
+</table>
+
+<div class="waitNav">
+    <div class="container text-center" style="padding-top:calc(100% / 5);">
+        <img src="img/waiter.gif" style="width:25%;" /><br />
+        <span class="label-comun label-sign"></span>
+    </div>
+</div>
+
+<div class="mainmenu hidden">
+    <button class="btn-menu-comun btnCambiarClave loged">
+        <img src="img/cambiarclave.png" class="img-menu pull-left" />
+        <span class="txt-menu-comun">Cambiar contraseña</span>
+    </button>
+    <!--
+        <button class="btn-menu-comun btnPresentarClubRedondo socio loged">
+            <img src="img/invitaramigo.png" class="img-menu pull-left" />
+            <span class="txt-menu-comun">Invitar</span>
+        </button>
+        <button class="btn-menu-comun btnAcercaDe">
+            <img src="img/acercade.png" class="img-menu pull-left" />
+            <span class="txt-menu-comun">Acerca de</span>
+        </button>
+    -->
+    <button class="btn-menu-comun btnMisCupones socio loged">
+        <img src="img/miscupones.png" class="img-menu pull-left" />
+        <span class="txt-menu-comun">Mis cupones</span>
+    </button>
+    <button class="btn-menu-comun btnCompartir">
+        <img src="img/compartir.png" class="img-menu pull-left" />
+        <span class="txt-menu-comun">Compartir</span>
+    </button>
+    <button class="btn-menu-comun notloged" onclick="_FUNCTIONS.onShowLogin();">
+        <img src="img/login.png" class="img-menu pull-left" />
+        <span class="txt-menu-comun">Iniciar sesión</span>
+    </button>
+    <button class="btn-menu-comun btnLogin loged" data-provider="quit">
+        <img src="img/cerrarsesion.png" class="img-menu pull-left" />
+        <span class="txt-menu-comun">Cerrar sesión</span>
+    </button>
+</div>

@@ -1,0 +1,90 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-facebook4": {
+            "APP_ID": "1900715016817809",
+            "APP_NAME": "MicroInfoMaps",
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-fcm": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-buildinfo": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-universal-links-plugin": {
+            "PACKAGE_NAME": "com.phonegap.credipaz.public"
+        },
+        "cordova-plugin-browsertab": {
+            "PACKAGE_NAME": "com.phonegap.credipaz.public"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.phonegap.microinfomaps.ubaderecho"
+        }
+    }
+}

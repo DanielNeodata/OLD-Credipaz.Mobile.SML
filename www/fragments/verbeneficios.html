@@ -1,0 +1,65 @@
+<div id="full-verbeneficios" class="full full-verbeneficios">
+    <div style="background-color:white;padding:0px;padding-bottom:5px;padding-left:10px;">
+        <table width="100%">
+            <tr>
+                <td valign="middle" align="left">
+                    <a href="#" class="btnArea" data-area=".inicio">
+                        <i class="material-icons" style="color:silver;font-size:40px;">arrow_back</i>
+                    </a>
+                </td>
+                <td valign="middle" align="left" id="classCategoria" width="100%;">
+                    <img class="img-categoria" src="" style="height:64px;" />
+                    <span class="title-categoria"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td valign="middle" align="left">
+                    <div class="idle-search progress progress-striped active" style="margin:0px;padding:0px;margin-top:3px;">
+                        <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="children-categories" style="padding-left:15px;padding-right:15px;"></div>
+
+    <div class="form-group search-controls" style="display:none;">
+        <div class="row" style="margin:0px;padding:0px;height:34px;">
+            <div class="col-xs-5" stlye="padding-left:0px;margin:0px;">
+                <div class="togglebutton pull-left" style="padding-top:5px;"><label style="color:white;font-size:14px;"><input style="margin-left:5px;" id="nearme" name="nearme" type="checkbox" class="nearme"> Cerca mío</label></div>
+                <div class="togglebutton pull-left" style="padding-top:5px;margin-bottom:5px;"><label style="color:white;font-size:14px;"><input style="margin-left:5px;" id="showmap" name="showmap" type="checkbox" class="showmap"> Mapa</label></div>
+            </div>
+            <div class="col-xs-7 pull-right" stlye="padding-right:0px;margin:0px;">
+                <input style="margin-top:10px;background-image:url(lupa.png);background-size:50px 35px;background-position:0px 0px;background-repeat:no-repeat;padding-left:40px;font-size:16px;height:36px;" class="clase text validate dbase field-comun coords" type="text" id="coords" name="coords" placeholder="" />
+            </div>
+        </div>
+    </div>
+
+    <div id="listBeneficios" class="list-beneficios" style="margin-top:15px;overflow-x:hidden;overflow-y:auto;"></div>
+
+    <div id="mapaBeneficios" class="mapaBeneficios" style="display:none;">
+        <div id="map" class="map"></div>
+        <span id="btnMeTrack" class="btnMeTrack btn btn-primary btn-fab btn-raised pull-right">
+            <i class="material-icons">my_location</i>
+        </span>
+    </div>
+
+
+    <input type="hidden" id="type_categoria" name="type_categoria" value="" />
+    <input type="hidden" id="code_categoria" name="code_categoria" value="" />
+    <input type="hidden" id="mode_categoria" name="mode_categoria" value="" />
+    <input type="hidden" id="description_categoria" name="description_categoria" value="" />
+    <input type="hidden" id="cercamio" name="cercamio" value="" />
+</div>
+
+
+<div class="container area-cupon well shadow-hard hidden" style="background-color:white;margin-left:10px;margin-right:10px;"></div>
+
+<table width="100%" class="wait-canje hidden">
+    <tr>
+        <td valign="middle" align="center">
+            <img src="img/waiter.gif" style="width:25%;margin-top:15px;" />
+        </td>
+    </tr>
+</table>

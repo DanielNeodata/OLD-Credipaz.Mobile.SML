@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="target-densitydpi=medium-dpi" />
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-ui-touch-punch.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/velocity.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/material.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jszip.min.js"></script>
+
+    <script type="text/javascript" src="./js/flex/es/strings.js"></script>
+    <script type="text/javascript" src="./js/fixed/es/strings.js"></script>
+    <script type="text/javascript" src="./js/fixed/_DEFINITIONS.js"></script>
+    <script type="text/javascript" src="./js/flex/_INIT_APP.js"></script>
+    <script type="text/javascript" src="./js/fixed/_INIT_EVENTS.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <div id="splash" style="display:none;" class="text-center">
+        <table style="margin-left: auto;margin-right: auto;margin-top:10%;height:80%;">
+            <tr>
+                <td valign="middle" align="center">
+                    <img src="neodata.png"/>
+                    <img src="splash.png"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="login" class="login fullscreen hidden">
+        <table style="margin-left: auto;margin-right: auto;margin-top:50px;width:100%;">
+            <tr>
+                <td valign="middle" align="center">
+                    <img src="splash.png" class="img-responsive" />
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="center" id="tdApps"></td>
+            </tr>
+            <tr>
+                <td valign="middle" align="center">
+                    <p>
+                        <a href="#" id="btnLoginAnonym" class="btnLoginMove btnLoginAnonym btn btn-danger btn-raised" style="width:230px;">
+                            <i class='fa fa-users fa-2x pull-right' aria-hidden='true'></i> Acceso anónimo
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#" id="btnLogin" class="btnLoginMove btnLogin btn btn-primary btn-raised" style="width:230px;">
+                            <i class='fa fa-facebook-official fa-2x pull-right' aria-hidden='true'></i> Acceder con Facebook
+                        </a>
+                    </p>
+                    <p class="remember">
+                        <input type="checkbox" value="1" id="remember" name="remember" class="remember" checked /> Recordarme
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="main" class="fullscreen hidden">
+        <div id="map" class="map-fullview"></div>
+    </div>
+    
+    <div id="disconnected" class="disconnected hidden">
+        <div class="container text-center">
+            <h1><img src="splash.png" /></h1>
+            <h1>No hay conexión a Internet</h1>
+            <table style="margin-left: auto;margin-right: auto;">
+                <tr>
+                    <td valign="middle" align="center">
+                        <a href="#" id="btnReconnect" class="btnReconnect btn btn-danger btn-raised">
+                            <i class='fa fa-history fa-2x' aria-hidden='true'></i> Reintentar
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    $("#splash").fadeIn(500);
+</script>
+
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>315934810714-ijbrcaq360lnf9asikrp1o8fu1nj4io8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.315934810714-ijbrcaq360lnf9asikrp1o8fu1nj4io8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDOHlkLsgnYN8co1mfH5ON2T-Vm4tUgXIo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>315934810714</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.phonegap.mobile.sml</string>
+	<key>PROJECT_ID</key>
+	<string>credipaz-sml-96a65</string>
+	<key>STORAGE_BUCKET</key>
+	<string>credipaz-sml-96a65.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:315934810714:ios:e34e581ce93cf8a1cf2e63</string>
+	<key>DATABASE_URL</key>
+	<string>https://credipaz-sml-96a65.firebaseio.com</string>
+</dict>
+</plist>

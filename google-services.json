@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "315934810714",
+    "firebase_url": "https://credipaz-sml-96a65.firebaseio.com",
+    "project_id": "credipaz-sml-96a65",
+    "storage_bucket": "credipaz-sml-96a65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315934810714:android:f3427244c9298a83cf2e63",
+        "android_client_info": {
+          "package_name": "com.phonegap.mobile.sml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315934810714-b6ls1846l0kddcl24mfgm8u8tgso421j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdzJaSYHAE5tLwsvxtbYEBXE27R8_f7Ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315934810714-b6ls1846l0kddcl24mfgm8u8tgso421j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

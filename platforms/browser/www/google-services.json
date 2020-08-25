@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "239844374000",
+    "firebase_url": "https://credipaz-club-redondo.firebaseio.com",
+    "project_id": "credipaz-club-redondo",
+    "storage_bucket": "credipaz-club-redondo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239844374000:android:f7bc3347a66bbb54b81935",
+        "android_client_info": {
+          "package_name": "com.phonegap.credipaz.cr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239844374000-p4eaa048rpehva6klea6an4rlla4kc5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcTQ8JyUE9reTTcsktIluDT0DA7pD3U3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239844374000-p4eaa048rpehva6klea6an4rlla4kc5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

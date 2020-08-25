@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, ++minimum-scale=1,width=device-width, viewport-fit=cover" />
+    <meta http-equiv="Content-Security-Policy" content="
+          default-src * whatsapp://* gap://* tel://* mail://* 'self' 'unsafe-inline' 'unsafe-eval';
+          script-src * 'self' 'unsafe-inline' 'unsafe-eval';
+          connect-src * 'self' 'unsafe-inline' 'unsafe-eval';
+          img-src * data: blob: 'self' 'unsafe-inline' 'unsafe-eval';
+          style-src * 'self' 'unsafe-inline' 'unsafe-eval';" />
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/categories.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="./js/_A.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/jquery-ui-touch-punch.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/material.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/carousel-swipe.js"></script>
+    <script type="text/javascript" src="./js/vendor/fastclick.js"></script>
+</head>
+<body>
+    <div class="scanner" style="display:none;">
+        <div class="laser" style="background-color:green;width:100%;border:solid 4px green;height:1px;border-radius:5px;opacity:0.65;position:relative;"></div>
+        <div class="alert alert-dismissible alert-info" style="position:absolute;bottom:0px;left:0px;width:100%;margin:0px;">
+            <strong>Detectar código QR.</strong><br /> Centrar el código y aguardar sea detectado
+            <a href="#" class="btn btn-danger btn-lg btn-raised closeScanner"><i class="material-icons">cancel</i> Cancelar</a>
+        </div>
+    </div>
+    <div class="no-scanner">
+        <div id="innerLink" class="hidden innerLink"></div>
+        <span id="btnUser" class="hidden btnUser" style="color:black;padding:2px;position:fixed;right:0px;top:0px;font-size:12px;"></span>
+        <div id="splash" class="splash text-center">
+            <img class="img-clubredondo" src="sml.png" style="text-align:center; vertical-align:middle;width:75%;display:none;position:absolute;" />
+            <img class="img-mas" src="mas.png" style="text-align:center; vertical-align:middle;width:75%;display:none;position:absolute;" />
+            <div class="img-waiter" style="vertical-align:middle;display:none;position:absolute;">
+                <img src="img/waiter.gif" style="text-align:center;width:50%;" />
+            </div>
+            <div class="img-welcome" style="vertical-align:middle;display:none;position:absolute;width:100%;">
+                <img src="img/welcome.png" style="text-align:center;width:100%;" />
+            </div>
+        </div>
+        <div id="login" class="page login"></div>
+        <div id="main" class="page main">
+            <div class="full-primary">
+                <div class="area inicio vscroll"></div>
+                <div class="area datospersonales vscroll"></div>
+                <div class="area recargas vscroll"></div>
+                <div class="area verbeneficios vscroll"></div>
+                <div class="area add_adherir_jelper vscroll"></div>
+                <div class="area newpassword vscroll"></div>
+                <div class="area ticket vscroll"></div>
+                <div class="area ticketshistorial vscroll"></div>
+                <div class="navigation"></div>
+            </div>
+            <div class="alert-general hidden alert alert-dismissible alert-success" style="z-index:99999;position:absolute;bottom:25px;width:100%;">
+                <button type="button" class="close close-alert">×</button>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div id="area-footer" class="area-footer noshare">
+                <table style="font-size:9px;width:100%;">
+                    <tr>
+                        <td width="25%" align="center" valign="bottom">
+                            <button class="btnArea btnInicio btnReinit" data-area=".inicio" style="border:solid 0px white;background-color:transparent;">
+                                <img src="img/inicio.png" style="height:30px;" />
+                                <span style="color:#445bc1;display:block;">Inicio</span>
+                            </button>
+                        </td>
+                        <td width="25%" align="center" valign="bottom">
+                            <button class="btnCercaMio" style="border:solid 0px white;background-color:transparent;">
+                                <img src="img/cercamio.png" style="height:30px;" />
+                                <span style="color:#445bc1;display:block;">Cerca mío</span>
+                            </button>
+                        </td>
+                        <td width="25%" align="center" valign="bottom">
+                            <button class="btnCredencialVirtual socio loged" style="border:solid 0px white;background-color:transparent;">
+                                <img src="img/credencial.png" style="height:30px;" />
+                                <span style="color:#445bc1;display:block;">Credencial</span>
+                            </button>
+                        </td>
+                        <td width="25%" align="center" valign="bottom">
+                            <a href="tel:08002223434"><img src="img/0800.png" style="height:30px;" /></a>
+                            <span style="color:#445bc1;display:block;">Contáctenos</span>
+                        </td>
+                        <!--
+                            <td width="20%" align="center" valign="bottom">
+                                <a href="whatsapp://send?abid=+541161602919&text="><img src="img/whatsapp.png" style="height:30px;" /></a>
+                                <span style="color:#445bc1;display:block;">Whatsapp</span>
+                            </td>
+                        -->
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="disconnected" class="page disconnected"></div>
+        <div id="deprecated" class="deprecated hidden" style="background-color:ghostwhite;"></div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () { onLoadFiles(); }, 1000);
+    });
+</script>

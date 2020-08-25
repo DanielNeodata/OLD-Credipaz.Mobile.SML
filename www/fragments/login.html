@@ -1,0 +1,77 @@
+<div id="full-login" class="full" style="background-image:url(fondo-registro.png);background-size:100% 100%;">
+    <div class="vscroll waitForm hidden">
+        <div class="container text-center" style="padding-top:calc(100% / 5);">
+            <img src="img/waiter.gif" style="width:25%;" /><br />
+            <span class="label-comun label-sign"></span>
+        </div>
+    </div>
+    <div class="vscroll logForm">
+        <div class="container row-username">
+            <div class="well shadow" style="background-color:#445bc1;margin-top:20px;">
+                <table width="100%">
+                    <tr>
+                        <td valign="middle" align="left">
+                            <a href="#" class="btnArea" data-area=".inicio">
+                                <i class="material-icons" style="color:silver;font-size:40px;">arrow_back</i>
+                            </a>
+                        </td>
+                        <td valign="middle" align="right" width="100%">
+                            <span style="color:white;padding:0px;margin:0px;font-size:20px;" class="title-area">Inicio de sesión</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <table style="width:70%;margin-top:30px;" align="center">
+                <tr>
+                    <td>
+                        <select class="form-control validateLogin dbaseLogin tipodocumento" id="tipodocumento" name="tipodocumento">
+                            <option value="" disabled selected>[Tipo de documento]</option>
+                            <option value="89">LE
+                            <option value="90">LC</option>
+                            <option value="94">PASAPORTE</option>
+                            <option value="96">DNI</option>
+                            <option value="97">DNI extranjero</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-control number validateLogin dbaseLogin documento" type="number" id="documento" name="documento" placeholder="Nº de documento" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="sex validateLogin dbaseLogin form-control sex" id="sex" name="sex" placeholder="Sexo">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Para ingresar por primera vez, ingrese la contraseña que le fue enviada por email.</label>
+                        <input class="form-control text validateLogin dbaseLogin password" type="password" id="password" name="password" placeholder="Contraseña" />
+                    </td>
+                </tr>
+            </table>
+            <table style="width:70%;margin-top:40px;" align="center">
+                <tr>
+                    <td>
+                        <a href="#" id="btnLogin" data-provider="jelper" class="btnLoginProvider btnLogin btn-comun">
+                            Ingresar
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" id="btnLogin" data-provider="forget" class="btnLoginProvider btnLogin btn btn-warning">
+                            Olvidé mi contraseña
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

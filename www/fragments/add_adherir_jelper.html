@@ -1,0 +1,121 @@
+<div id="full-adherir_jelper" class="full" style="background-color:white;">
+    <div class="well shadow" style="background-color:#445bc1;">
+        <table width="100%">
+            <tr>
+                <td valign="middle" align="left">
+                    <a href="#" class="btnArea" data-area=".inicio">
+                        <i class="material-icons" style="color:silver;font-size:40px;">arrow_back</i>
+                    </a>
+                </td>
+                <td valign="middle" align="right" width="100%">
+                    <span style="color:white;padding:0px;margin:0px;font-size:20px;" class="title-area">Asociate ahora</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row" style="background-color:white;padding:5px;">
+        <div class="col-xs-12">
+            <input type="hidden" class="SuscripcionVendedor" id="SuscripcionVendedor" name="SuscripcionVendedor" value="0" />
+            <table style="width:100%;margin:0px;" align="center">
+                <tr class="hidden"><td colspan="2"><input type="hidden" class="dbaseadherir TitularTipoPersona" id="TitularTipoPersona" name="TitularTipoPersona" value="F" /></td></tr>
+                <tr class="hidden"><td colspan="2"><input type="hidden" class="dbaseadherir TitularCondicionIVA" id="TitularCondicionIVA" name="TitularCondicionIVA" value="5" /></td></tr>
+                <tr class="hidden"><td colspan="2"><input type="hidden" class="dbaseadherir TitularNacimientoLocalidadCP" id="TitularNacimientoLocalidadCP" name="TitularNacimientoLocalidadCP" value="" /></td></tr>
+                <tr class="hidden"><td colspan="2"><input type="number" class="form-control number dbaseadherir TitularCUIT" id="TitularCUIT" name="TitularCUIT" value="" /></td></tr>
+
+                <tr>
+                    <td>
+                        <select class="form-control validateAddJelper dbaseadherir SuscripcionPlan" id="SuscripcionPlan" name="SuscripcionPlan">
+                            <option value="-1" selected>[Plan]</option>
+                            <option value="1">Socio 10 Individual $399</option>
+                            <option value="2">Socio 10 Familiar $1250</option>
+                            <option value="3">Socio Max Individual $699</option>
+                            <option value="4">Socio Max Familiar $2150</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-control validateAddJelper dbaseadherir TitularSexo" id="TitularSexo" name="TitularSexo">
+                            <option value="-1" selected>[Sexo]</option>
+                            <option value="F">Femenino</option>
+                            <option value="M">Masculino</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="text" class="form-control validateAddJelper dbaseadherir TitularApellido" id="TitularApellido" name="TitularApellido" placeholder="Apellido" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="form-control validateAddJelper dbaseadherir TitularNombre" id="TitularNombre" name="TitularNombre" placeholder="Nombre" /></td>
+                </tr>
+                <tr>
+                    <td>Fecha de nacimiento</td>
+                    <td><input type="date" class="form-control date validateAddJelper dbaseadherir TitularNacimientoFecha" id="TitularNacimientoFecha" name="TitularNacimientoFecha" placeholder="Fecha de nacimiento" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="form-control validateAddJelper dbaseadherir TitularTipoDocumento" id="TitularTipoDocumento" name="TitularTipoDocumento">
+                            <option value="-1" selected>[Tipo doc.]</option>
+                            <option value="89">LE</option>
+                            <option value="90">LC</option>
+                            <option value="94">PASAPORTE</option>
+                            <option value="96">DNI</option>
+                            <option value="97">DNI extranjero</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="tel" class="form-control number validateAddJelper dbaseadherir TitularNroDocumento" id="TitularNroDocumento" name="TitularNroDocumento" placeholder="Nº de documento" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="email" class="form-control email dbaseadherir TitularEMail" id="TitularEMail" name="TitularEMail" placeholder="Email" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="tel" class="form-control dbaseadherir TitularTelefonoParticular" id="TitularTelefonoParticular" name="TitularTelefonoParticular" placeholder="Teléfono (área + número)" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="tel" class="form-control dbaseadherir TitularTelefonoCelular" id="TitularTelefonoCelular" name="TitularTelefonoCelular" placeholder="Celular (área + número)" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control dbaseadherir TitularDomicilioCalle" id="TitularDomicilioCalle" name="TitularDomicilioCalle" placeholder="Calle" /></td>
+                    <td><input type="text" class="form-control dbaseadherir TitularDomicilioAltura" id="TitularDomicilioAltura" name="TitularDomicilioAltura" placeholder="Altura" /></td>
+                </tr>
+                <tr>
+                    <td><input type="number" class="form-control number dbaseadherir TitularDomicilioPiso" id="TitularDomicilioPiso" name="TitularDomicilioPiso" placeholder="Piso" /></td>
+                    <td><input type="text" class="form-control text dbaseadherir TitularDomicilioDepto" id="TitularDomicilioDepto" name="TitularDomicilioDepto" placeholder="Depto." /></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" class="form-control text dbaseadherir TitularDomicilioLocalidadCP" id="TitularDomicilioLocalidadCP" name="TitularDomicilioLocalidadCP" placeholder="Cód.postal" /></td>
+                </tr>
+            </table>
+<!--
+    <table style='width:100%;'>
+        <tr>
+            <td><h2>Grupo familiar</h2></td>
+            <td><a href='#' data-target='ls-familiares' class='btn btn-success btn-xs btn-add-familiar'><span class='material-icons'>add</span></a></td>
+        </tr>
+    </table>
+    <div class="well">
+        <ul class="ls-familiares list-group"></ul>
+    </div>
+-->
+            <table style="width:100%;margin:0px;margin-top:10px;" align="center">
+                <tr>
+                    <td>
+                        <label style="color:black;">
+                            <input type="checkbox" id="chkTerminosJelper" name="chkTerminosJelper" class="chkTerminosJelper" /> <span style="font-size:12px;">Acepto los términos y condiciones</span> <a href="#" class="btnTerminos" style="font-size:12px;">Ver detalle</a>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table style="width:100%;margin:0px;margin-top:10px;margin-bottom:25px;" align="center">
+                <tr>
+                    <td>
+                        <a href="#" class="btnSaveAltaJelper btn-comun btn-block">Asociarme</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+</div>

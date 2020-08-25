@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.smlconsultores.jelper" version="3.0.0" versionCode="300" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>Jelper</name>
+  <description>Jelper</description>
+  <author email="app@neodata.com.ar" href="http://www.gruponeodata.com">Neodata</author>
+  <content src="index.html" />
+  <preference name="phonegap-version" value="cli-9.0.0" />
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="default" />
+  <preference name="target-device" value="universal" />
+  <preference name="DisallowOverscroll" value="true" />
+  <preference name="fullscreen" value="true" />
+  <preference name="webviewbounce" value="true" />
+  <preference name="prerendered-icon" value="true" />
+  <preference name="stay-in-webview" value="false" />
+  <preference name="ios-statusbarstyle" value="black-opaque" />
+  <preference name="detect-data-types" value="true" />
+  <preference name="exit-on-suspend" value="false" />
+  <preference name="show-splash-screen-spinner" value="false" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <preference name="disable-cursor" value="false" />
+  <preference name="android-minSdkVersion" value="19" />
+  <preference name="android-targetSdkVersion" value="28" />
+  <preference name="android-installLocation" value="auto" />
+  <preference name="SplashScreen" value="screen" />
+  <preference name="SplashScreenDelay" value="0" />
+  <preference name="AndroidLaunchMode" value="singleTask" />
+  <preference name="KeyboardShrinksView" value="true" />
+  <preference name="swift-version" value="4.2" />
+  <preference name="NavigationBarBackgroundColor" value="#808080" />
+  <preference name="NavigationBarLigth" value="true" />
+  <icon src="www/sml.png" />
+  <icon qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
+  <icon qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
+  <icon qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
+  <icon qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+  <splash src="www/splash-portrait.png" />
+  <splash qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
+  <splash qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
+  <splash qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
+  <splash qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+  <access origin="*" />
+  <access origin="whatsapp:*" launch-external="yes" />
+  <plugin name="cordova-plugin-whitelist" spec="1.3.3"/>
+  <plugin name="cordova-plugin-device"/>
+  <plugin name="cordova-plugin-dialogs"/>
+  <plugin name="cordova-plugin-geolocation"/>
+  <plugin name="cordova-plugin-inappbrowser"/>
+  <plugin name="cordova-plugin-media"/>
+  <plugin name="cordova-plugin-network-information"/>
+  <plugin name="cordova-plugin-splashscreen"/>
+  <plugin name="cordova-plugin-vibration"/>
+  <plugin name="cordova-plugin-sim2" />
+  <plugin name="cordova-plugin-exit" />
+  <plugin name="phonegap-plugin-mobile-accessibility" />
+  <plugin name="cordova-plugin-navigationbar-color" />
+  <plugin name="phonegap-plugin-barcodescanner" />
+  <plugin name="https://github.com/gitawego/cordova-screenshot.git" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+  <allow-intent href="geo:*" />
+  <allow-intent href="whatsapp:*" />
+  <allow-navigation href="*" />
+  <platform name="android">
+    <allow-intent href="market:*" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+      <application android:usesCleartextTraffic="true" />
+    </edit-config>
+  </platform>
+</widget>
