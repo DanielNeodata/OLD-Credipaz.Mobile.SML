@@ -1,2 +1,2 @@
-# club.redondo.app
-club.redondo.app
+# OLD-Credipaz.Mobile.SML
+OLD-Credipaz.Mobile.SML
